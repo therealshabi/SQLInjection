@@ -18,7 +18,7 @@
         <activity android:name=".SqlActivity" />
         <activity android:name=".ProtectionPasswordActivity" />
         <activity android:name=".ProtectionIntroActivity" />
-        <activity android:name=".ProtectionUsernameActivity"></activity>
+        <activity android:name=".ProtectionUsernameActivity" />
     </application>
 
 </manifest>

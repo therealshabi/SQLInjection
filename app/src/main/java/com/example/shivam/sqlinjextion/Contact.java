@@ -10,22 +10,25 @@ public class Contact {
     String name;
     String phoneNumber;
     String emailAddress;
+    String password;
 
     public Contact(){}
 
-    public Contact(int id,String name,String phoneNumber,String emailAddress)
+    public Contact(int id,String name,String phoneNumber,String emailAddress, String password)
     {
         this.id=id;
         this.name=name;
         this.phoneNumber=phoneNumber;
         this.emailAddress=emailAddress;
+        this.password = password;
     }
 
-    public Contact(String name,String phoneNumber,String emailAddress)
+    public Contact(String name,String phoneNumber,String emailAddress, String password)
     {
         this.name=name;
         this.phoneNumber=phoneNumber;
         this.emailAddress=emailAddress;
+        this.password = password;
     }
 
     public int getId(){
@@ -54,6 +57,11 @@ public class Contact {
         this.emailAddress=emailAddress;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-
+    public String getPassword() {
+        return this.password;
+    }
 }

@@ -4,52 +4,87 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="com.example.shivam.sqlinjextion.SqlActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Preview of SQL INJECTION: "
-        android:textStyle="bold|italic"
-        android:layout_margin="5dp"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text=" SQL INJECTION SAMPLE "
+        android:textSize="28sp"
+        android:textStyle="bold|italic" />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your phone number: "
-        android:id="@+id/activity_sql_editText"/>
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/activity_sql_editText"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter your phone number: "
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_action_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CLICK ME!!"
-        android:layout_gravity="center"
-        android:id="@+id/button"/>
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="NO Protection" />
+
+        <Button
+            android:id="@+id/activity_sql_protectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="PROTECTION" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OUTPUT DATA RECIEVED"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fillViewport="true">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:id="@+id/textView"/>
+            android:layout_margin="10dp" />
 
     </ScrollView>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PROTECTION"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:id="@+id/activity_sql_protectionButton"/>
 
 </LinearLayout>

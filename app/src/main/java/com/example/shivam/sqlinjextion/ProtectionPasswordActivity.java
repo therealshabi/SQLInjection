@@ -40,7 +40,7 @@ public class ProtectionPasswordActivity extends AppCompatActivity {
                     List<Contact> contactList = db.query(value);
                     String text = "";
                     for (Contact cn : contactList) {
-                        text += "\n Id: " + cn.getId() + "\n Name: " + cn.getName() + "\n Phone: " + cn.getPhoneNumber() + "\n EmailAddress: " + cn.getEmailAddress() + "\n";
+                        text += "\n Id: " + cn.getId() + "\n Name: " + cn.getName() + "\n Phone: " + cn.getPhoneNumber() + "\n EmailAddress: " + cn.getEmailAddress() + "\n Password: "+cn.getPassword();
                     }
                     textView.setText(text);
                 }

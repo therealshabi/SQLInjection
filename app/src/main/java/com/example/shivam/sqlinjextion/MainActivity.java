@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 db.deleteAllContacts();
-                db.addContact(new Contact("Shivam","8527456771","gupta.shivam97@gmail.com"));
-                db.addContact(new Contact("Shweta","9968547388","gupta.shweta@gmail.com"));
-                db.addContact(new Contact("Shuchita","9990173746","gupta.shuchita@gmail.com"));
-                db.addContact(new Contact("Manoj","9810612322","gupta.manoj@gmail.com"));
-                db.addContact(new Contact("Neelam","9711415044","gupta.neelam@gmail.com"));
+                db.addContact(new Contact("Shivam","8527456771","gupta.shivam97@gmail.com","testing"));
+                db.addContact(new Contact("Shahbaz","1234567890","hussain.shahbaz@gmail.com","hacked"));
+                db.addContact(new Contact("Shubhankar","0123456789","gupta.shubhankar@gmail.com","research"));
+                db.addContact(new Contact("Gurleen","4204204200","sethi.gurleen@gmail.com","android"));
+                db.addContact(new Contact("Neelam","9711415044","gupta.neelam@gmail.com","hello"));
 
                 Intent intent=new Intent(getBaseContext(),SqlActivity.class);
                 startActivity(intent);
